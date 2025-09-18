@@ -1,113 +1,114 @@
-/* Sidebar.css */
+/* Siderbar */
 .sidebar {
-  width: 240px;
-  height: 100vh;
-  background-color: #1a1a1a;
-  color: #f5f5f5;
+  background-color: #232323;
+  color: rgba(255, 255, 255, 0.4);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  height: 100vh;
+  width: 281px;
 }
 
 .sidebar-header {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 20px;
+  gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 18px;
-  font-weight: bold;
+  width: 100%;
 }
 
-.logo-icon {
-  background-color: #d7fd38;
-  color: #000;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-weight: bold;
+.wallet {
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+  padding: 26px 30px;
+
 }
 
 .wallet-btn {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  color: #DEE8E8;
   font-size: 14px;
+  height: 44px;
+  width: 100%;
+
+}
+
+.logo img {
+  padding-left: 30px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  margin: 30px 0;
+  padding: 0px 30px 130px;
+
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  text-decoration: none;
-  color: #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  transition: background 0.2s;
-}
-
-.menu-item:hover {
-  background-color: #2a2a2a;
-  color: #fff;
-}
-
-.menu-item.active {
-  background-color: #3498db;
-  color: #fff;
-}
-
-.sidebar-footer {
-  border-top: 1px solid #333;
-  padding-top: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
+.logout,
 .language,
-.logout {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.menu-item {
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 14px;
-  color: #ccc;
+  margin-bottom: 6px;
+  padding: 13px 10px 11px 12px;
+  text-transform: capitalize;
 }
 
-.language:hover,
-.logout:hover {
-  color: #fff;
+.wallet-btn i {
+  font-size: 17px;
+  margin-left: 10px;
 }
 
+.menu-item i {
+  font-size: 17px;
+  margin-right: 11px;
+}
+
+.wallet-btn.active,
+.wallet-btn:hover,
+.menu-item.active,
+.menu-item:hover {
+  background-color: #DDF247;
+  box-shadow: 0px 4px 20px 0px rgba(221, 242, 71, 0.30);
+  color: #161616;
+}
+
+/* Layout */
 .layout {
   display: flex;
-  height: 100vh; /* ocupa toda la pantalla */
+  height: 100vh;
   width: 100%;
 }
 
 .layout .sidebar {
-  flex-shrink: 0; /* evita que el sidebar se reduzca */
+  flex-shrink: 0;
 }
 
 .content {
   flex: 1;
   padding: 20px;
-  overflow-y: auto; /* scroll solo en el contenido */
-  background-color: #f5f6fa;
+  overflow-y: auto;
+  background-color: #161616;
+}
+
+.sidebar-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0 30px;
+
 }

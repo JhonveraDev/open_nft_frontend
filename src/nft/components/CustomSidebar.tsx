@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import myImage from "../../assets/images/logo.png";
 import "../../assets/style.css";
 
 
@@ -8,39 +9,43 @@ const CustomSidebar = () => {
       {/* Logo / Brand */}
       <div className="sidebar-header">
         <div className="logo">
-          <span className="logo-icon">9</span>
-          <span className="logo-text">OpeN9</span>
+          <img src={myImage} alt="main logo" />
         </div>
-        <button className="wallet-btn">Wallet Connect 💳</button>
+        <div className="wallet">
+          <button className="wallet-btn">Wallet Connect <i className="fa-solid fa-wallet"></i></button>
+        </div>
       </div>
 
       {/* Main Menu */}
       <nav className="menu">
         <NavLink to="/" end className={({ isActive }) => `menu-item ${isActive ? "active" : ""}`}>
-          <span className="icon">🏠</span> Home
+          <i className="fa-solid fa-house-user"></i> Home
         </NavLink>
         <NavLink to="/product" className={({ isActive }) => `menu-item ${isActive ? "active" : ""}`}>
-          <span className="icon">🔗</span> NFT Store
+          <i className="fa-solid fa-cart-shopping"></i> Explore
         </NavLink>
         <NavLink to="/about" className={({ isActive }) => `menu-item ${isActive ? "active" : ""}`}>
-          <span className="icon">💎</span> About Us
+          <i className="fa-solid fa-address-card"></i> About Us
         </NavLink>
         <NavLink to="/blog" className={({ isActive }) => `menu-item ${isActive ? "active" : ""}`}>
-          <span className="icon">📰</span> Blog
+          <i className="fa-solid fa-book"></i> Blog
         </NavLink>
         <NavLink to="/contact" className={({ isActive }) => `menu-item ${isActive ? "active" : ""}`}>
-          <span className="icon">🎧</span> Contact
+          <i className="fa-solid fa-comments"></i> Contact
+        </NavLink>
+        <NavLink to="/contact" className={({ isActive }) => `menu-item ${isActive ? "active" : ""}`}>
+          <i className="fa-solid fa-scale-unbalanced"></i> Extra Element
         </NavLink>
       </nav>
 
       {/* Footer */}
       <div className="sidebar-footer">
-        <div className="language">
-          <span role="img" aria-label="flag">🇬🇧</span> English
-        </div>
-        <button className="logout">
-          <span className="icon">↩️</span> Logout
-        </button>
+        <NavLink to="/contact" className={({ isActive }) => `menu-item ${isActive ? "active" : ""}`}>
+          <i className="fa-solid fa-scale-unbalanced"></i> English
+        </NavLink>
+        <NavLink to="/contact" className={({ isActive }) => `menu-item ${isActive ? "active" : ""}`}>
+          <i className="fa-solid fa-right-from-bracket"></i> Logout
+        </NavLink>
       </div>
     </aside>
   );
