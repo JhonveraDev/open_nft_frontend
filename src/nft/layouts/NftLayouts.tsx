@@ -1,11 +1,11 @@
 import { Outlet } from "react-router";
-import CustomSidebar from "../components/CustomSidebar";
+import { Sidebar } from "../components/Sidebar";
 import "../../assets/style.css";
 
 export const NftLayouts = () => {
   return (
     <div className="layout">
-      <CustomSidebar />
+      <Sidebar />
       <main className="content">
         <Outlet />
       </main>

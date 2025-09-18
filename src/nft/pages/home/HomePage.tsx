@@ -1,7 +1,10 @@
-import React from 'react'
+import "../../../assets/style.css";
+import { ProductCard } from "../../components/ProductCard";
 
 export const HomePage = () => {
   return (
-    <div style={{backgroundColor: 'red'}}>HomePage</div>
+    <div className='home-container'>
+      <ProductCard />
+    </div>
   )
 }
