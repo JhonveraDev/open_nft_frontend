@@ -1,0 +1,76 @@
+/* Reset CSS básico y moderno */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Quitar estilos de tipografía por defecto */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Quitar estilos por defecto de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Quitar subrayado de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hacer que imágenes y videos sean responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Quitar borde en formularios */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Botones clickeables */
+button {
+  cursor: pointer;
+}
+
+/* Quitar quotes en blockquotes */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

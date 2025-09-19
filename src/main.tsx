@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import { NftApp } from './NftApp.js'
+import './assets/styles/reset.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

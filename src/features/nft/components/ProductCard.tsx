@@ -1,26 +1,24 @@
-import "../../assets/style.css";
-import myImage from "../../assets/images/card-item-46.jpg";
-import myImage2 from "../../assets/images/avatar-box-01.jpg";
+import myImage from "../../../assets/images/card-item-41.jpg";
+import myImage2 from "../../../assets/images/avatar-box-01.jpg";
+import "../../../assets/styles/style.css";
 
 export const ProductCard = () => {
   return (
     <div className="card">
       <div className="card-image">
         <img src={myImage} alt="NFT" />
-        <div className="card-timer">01h 51m 20s</div>
-        <div className="card-fav">♡</div>
+        <div className="card-wish">
+          <div className="card-timer">01h 51m 20s</div>
+          <div className="card-fav">♡</div>
+        </div>
       </div>
 
       <div className="card-content">
         <div className="card-title">Dayco serpentine belt</div>
         <div className="card-creator">
-          <img
-            src={myImage2}
-            alt="creator"
-          />
-          <div>
+          <img src={myImage2} alt="creator" />
+          <div className="card-author">
             <span>Created by:</span>
-            <br />
             <strong>Marvin McKinney</strong>
           </div>
         </div>

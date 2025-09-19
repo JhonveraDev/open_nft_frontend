@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router";
 import { Navigate } from "react-router-dom";
 
-import { NftLayouts } from "./nft/layouts/NftLayouts";
-import { HomePage } from "./nft/pages/home/HomePage";
-import { ProductPage } from "./nft/pages/product/ProductPage";
-import { AboutPage } from "./nft/pages/about/AboutPage";
-import { ContactPage } from "./nft/pages/contact/ContactPage";
+import { NftLayouts } from "./features/nft/layouts/NftLayouts";
+import { HomePage } from "./features/nft/pages/home/HomePage";
+import { ProductPage } from "./features/nft/pages/product/ProductPage";
+import { AboutPage } from "./features/nft/pages/about/AboutPage";
+import { ContactPage } from "./features/nft/pages/contact/ContactPage";
 
 //Sistema de Rutas principal
 export const appRouter = createBrowserRouter([

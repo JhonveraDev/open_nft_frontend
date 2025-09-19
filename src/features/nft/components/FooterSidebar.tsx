@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../../assets/style.css";
+import "../../../assets/styles/style.css";
 
 export const FooterSidebar = () => {
   return (

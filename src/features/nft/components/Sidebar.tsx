@@ -1,8 +1,7 @@
-import "../../assets/style.css";
 import { MenuSidebar } from "./MenuSidebar";
 import { FooterSidebar } from "./FooterSidebar";
 import { HeaderSidebar } from "./HeaderSidebar";
-
+import "../../../assets/styles/style.css";
 
 export const Sidebar = () => {
   return (
