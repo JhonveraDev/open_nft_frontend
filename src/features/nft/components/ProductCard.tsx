@@ -1,5 +1,6 @@
 import myImage from "../../../assets/images/card-item-41.jpg";
 import myImage2 from "../../../assets/images/avatar-box-01.jpg";
+import myImage3 from "../../../assets/images/fav.jpg";
 import "../../../assets/styles/style.css";
 
 export const ProductCard = () => {
@@ -9,20 +10,26 @@ export const ProductCard = () => {
         <img src={myImage} alt="NFT" />
         <div className="card-wish">
           <div className="card-timer">01h 51m 20s</div>
-          <div className="card-fav">♡</div>
+          <div className="card-fav"><i className="fa-regular fa-heart"></i></div>
+        </div>
+
+        <div className="card-bid">
+          <span>Place Bid</span>
         </div>
       </div>
 
       <div className="card-content">
         <div className="card-title">Dayco serpentine belt</div>
         <div className="card-creator">
-          <img src={myImage2} alt="creator" />
+          <img src={myImage2} className="card-avatar" alt="avatar" />
           <div className="card-author">
             <span>Created by:</span>
             <strong>Marvin McKinney</strong>
           </div>
         </div>
       </div>
+
+      <div className="card-divider"></div>
 
       <div className="card-footer">
         <span>Current Bid</span>
