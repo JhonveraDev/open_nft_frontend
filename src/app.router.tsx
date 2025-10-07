@@ -30,7 +30,7 @@ export const appRouter = createBrowserRouter([
         element: <ContactPage />,
       },
       {
-        path: "*", 
+        path: "*",
         element: <Navigate to="/" replace />,
       },
     ]

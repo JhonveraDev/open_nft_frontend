@@ -117,6 +117,15 @@
   width: 100%;
 }
 
+/* === PRODUCT CARD CONTAINER === */
+.product-cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
 /*Card*/
 /* === CARD BASE === */
 .card {
@@ -125,7 +134,7 @@
   cursor: pointer;
   padding: 10px 10px 14px 10px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  width: calc(20% - 28.5px);
+  width: 252.39px;
 }
 
 .card:hover {
@@ -147,12 +156,10 @@
   left: -75%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0.2) 0%,
-    rgba(255,255,255,0.5) 50%,
-    rgba(255,255,255,0.2) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0.2) 100%);
   transform: skewX(-25deg);
 }
 
@@ -169,8 +176,7 @@
 .card-image img {
   border-radius: 15px;
   display: block;
-  height: 244px;
-  width: 235px;
+
 }
 
 /* === CARD CONTENT === */
