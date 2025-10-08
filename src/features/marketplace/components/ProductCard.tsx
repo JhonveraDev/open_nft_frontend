@@ -1,6 +1,5 @@
 import { cardProduct } from "../../../assets/data/product-card-interface.type";
 
-
 interface ProductCardProps {
   product: cardProduct;
 }

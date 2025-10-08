@@ -41,7 +41,7 @@
   font-size: 14px;
   height: 44px;
   width: 100%;
-
+  transition: background-color 0.4s ease, color 0.4s ease; 
 }
 
 .logo img {
@@ -64,6 +64,7 @@
   margin-bottom: 6px;
   padding: 13px 10px 11px 12px;
   text-transform: capitalize;
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .wallet-btn i {
@@ -115,6 +116,7 @@
 /*Home Container*/
 .home-container {
   width: 100%;
+  padding: 0 10px;
 }
 
 /* === PRODUCT CARD CONTAINER === */
@@ -122,8 +124,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 28px;
+  gap: 25px;
 }
 
 /*Card*/
@@ -177,7 +178,6 @@
 .card-image img {
   display: block;
   transform: scale(1.02);
-
 }
 
 /* === CARD CONTENT === */
@@ -330,4 +330,137 @@
   font-weight: 800;
   line-height: 22px;
   text-rendering: optimizeLegibility;
+}
+
+/* === TITLES === */
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.title-container a {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #FFF;
+  transition: color 0.3s ease; 
+}
+
+.title-container a:hover {
+  color: #DDF247;
+}
+
+.title-container a .fa-arrow-right {
+  margin-left: 10px;
+}
+
+.titles h2 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+  text-transform: capitalize;
+}
+
+/* === MAIN BANNER === */
+.banner-container {
+  width: 100%;
+  background-color: rgba(35, 35, 35, 1);
+  padding: 60px 71px;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 76px;
+}
+
+.banner-container h2 {
+  color: #FFF;
+  font-size: 45px;
+  line-height: 61px;
+  max-width: 575px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.banner-container p {
+  color: rgba(255, 255, 255, 0.53);
+  font-size: 14px;
+  font-family: 'Azeret Mono';
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 540px;
+  margin-bottom: 40px;
+}
+
+.banner-buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-button-explore,
+.banner-button-create {
+  height: 50px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #161616;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: capitalize;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner-button-explore:hover {
+  background-color: #DDF247;
+}
+
+.banner-button-create:hover {
+  background-color: #FFF;
+}
+
+.banner-button-create {
+  background-color: #DDF247;
+  width: 230px;
+}
+
+.banner-button-create:hover {
+  background-color: #FFF;
+}
+
+.banner-button-explore {
+  background-color: #FFF;
+  width: 190px;
+}
+
+.banner-container img {
+  position: absolute;
+  right: 3%;
+  top: -8%;
+}
+
+@keyframes smooth-tilt {
+  0% {
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.banner-container img {
+  display: block;
+  animation: smooth-tilt 4.5s ease-in-out infinite;
+  transform-origin: center;
 }
