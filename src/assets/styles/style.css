@@ -147,6 +147,7 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .card-image::after {
@@ -174,8 +175,8 @@
 }
 
 .card-image img {
-  border-radius: 15px;
   display: block;
+  transform: scale(1.02);
 
 }
 

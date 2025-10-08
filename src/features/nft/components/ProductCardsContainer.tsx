@@ -1,6 +1,6 @@
 import { card_data } from "../../../assets/data/cards-data";
 import { ProductCard } from "./ProductCard";
-import "../../../assets/styles/style.css";
+
 
 export const ProductCardsContainer = () => {
   return (

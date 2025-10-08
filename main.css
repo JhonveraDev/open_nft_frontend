@@ -1,4 +1,27 @@
-/* Reset CSS básico y moderno */
+/*======== SCROLL BAR ========*/
+/* Estilos generales para toda la página */
+::-webkit-scrollbar {
+  width: 14px; /* ancho de la barra */
+}
+
+/* Color de fondo del área del scroll */
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* por ejemplo, un gris oscuro */
+}
+
+/* Color del “thumb” (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background-color: #9f9f9f; /* color principal */
+  border-radius: 10px;
+  border: 2px solid #1a1a1a; /* borde opcional */
+}
+
+/* Color cuando pasas el mouse por encima */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c5c5c5;
+}
+
+/*======== RESET CSS ========*/
 
 /* Box sizing */
 *,
