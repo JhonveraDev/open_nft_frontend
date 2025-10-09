@@ -1,4 +1,4 @@
-import { cardProduct } from "../../../assets/data/product-card-interface.type";
+import { cardProduct } from "../../../assets/data/card-data.interface";
 
 interface ProductCardProps {
   product: cardProduct;
@@ -33,7 +33,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
       <div className="card-footer">
         <span>Current Bid</span>
-        <strong>𖤍 {product.price_usd}</strong>
+        <strong><span>𖤍</span> {product.price_usd}</strong>
       </div>
     </div>
   )

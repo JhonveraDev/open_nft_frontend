@@ -1,4 +1,5 @@
-import { MainBanner } from "../../../../components/custom/MainBanner";
+import { MainBanner } from "../../../../components/ui/MainBanner";
+import { TopSellers } from "../../components/TopSellers";
 import { ProductCardsContainer } from "../../components/ProductCardsContainer";
 
 export const HomePage = () => {
@@ -6,6 +7,7 @@ export const HomePage = () => {
     <div className='home-container'>
       <MainBanner />
       <ProductCardsContainer />
+      <TopSellers />
     </div>   
   );
 }

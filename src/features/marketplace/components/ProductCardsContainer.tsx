@@ -1,5 +1,5 @@
-import { card_data } from "../../../assets/data/cards-data.interface"
-import { Titles } from "../../../components/ui/Titles";
+import { card_data } from "../../../assets/data/cards-data"
+import { Titles } from "../../../components/custom/Titles";
 import { ProductCard } from "./ProductCard";
 
 

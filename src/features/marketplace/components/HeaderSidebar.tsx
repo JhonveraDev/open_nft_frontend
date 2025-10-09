@@ -1,6 +1,5 @@
 import { Logo } from "../../../components/ui/Logo";
 
-
 export const HeaderSidebar = () => {
   return (
     <>

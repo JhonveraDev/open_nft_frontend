@@ -41,7 +41,7 @@
   font-size: 14px;
   height: 44px;
   width: 100%;
-  transition: background-color 0.4s ease, color 0.4s ease; 
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .logo img {
@@ -64,7 +64,7 @@
   margin-bottom: 6px;
   padding: 13px 10px 11px 12px;
   text-transform: capitalize;
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .wallet-btn i {
@@ -332,6 +332,12 @@
   text-rendering: optimizeLegibility;
 }
 
+.card-footer strong span {
+  color: #FFF;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
 /* === TITLES === */
 .title-container {
   width: 100%;
@@ -347,7 +353,7 @@
   line-height: 19px;
   text-transform: capitalize;
   color: #FFF;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 .title-container a:hover {
@@ -463,4 +469,88 @@
   display: block;
   animation: smooth-tilt 4.5s ease-in-out infinite;
   transform-origin: center;
+}
+
+/* === TOP SELLER CARD === */
+.top-seller-card__info,
+.top-seller-card__details,
+.top-seller-card__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-seller-card__avatar {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.top-seller-card__rank {
+  align-items: center;
+  background-color: #DEE8E8;
+  border-radius: 24px;
+  color: #161616;
+  display: flex;
+  font-size: 13px;
+  font-weight: 800;
+  height: 24px;
+  justify-content: center;
+  line-height: 18px;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  width: 24px;
+}
+
+.top-seller-card__name {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 25px;
+  margin-bottom: 4px;
+  color: #FFF;
+}
+
+.carousel {
+  margin-top: 30px;
+}
+
+.carousel-container {
+  margin-top: 60px;
+
+}
+
+.top-seller-card__sales {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 400;
+  font-family: 'Azeret Mono';
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* Contenedor de los puntitos */
+.swiper-pagination {
+  bottom: 10px !important; /* posición */
+}
+
+/* Cada puntito */
+.swiper-pagination-bullet {
+  background-color: #aaa; /* color normal */
+  opacity: 0.6;
+  width: 10px;
+  height: 10px;
+}
+
+/* Puntito activo */
+.swiper-pagination-bullet-active {
+  background-color: #ff6b00; /* color activo */
+  opacity: 1;
+}
+
+.swiper-pagination {
+  background-color: red;
+}
+
+.swiper {
+  height: 225px;
 }
